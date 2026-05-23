@@ -1,42 +1,40 @@
-# ai-dev-exp-template
+# Day086 — 洗濯逃げ窓コンパス
 
-Vite-based single-page template for `ai-dev-day-XXX` repositories.
+> 外出前に、洗濯物を外干しで逃げ切れるか部屋干しへ切り替えるか決めるツールです。
+>
+> Complexity Tier: small
+>
+> Selected Components: none
+>
+> Family / Mechanic: laundry_weather_window / window_adjust
+>
+> Input -> Output: editable_rows -> time_window_cards
+>
+> Audience Promise: 出発前に外干し継続か部屋干し切替かを決められる。
 
-## Required meta.json fields
+## 使い方
 
-- `day` (e.g. `Day001`)
-- `title`
-- `description`
-- `genre`
-- `theme`
-- `story_summary`
+このツールでできること
+外出前に、洗濯物を外干しで逃げ切れるか部屋干しへ切り替えるか決めるツールです。
 
-## Theme behavior
+こんな時に使います
+出かける前、空模様が怪しくて外干しのまま出るか迷う時に使います。
 
-- `src/themes.js` defines 8 visual themes.
-- Runtime applies `meta.json.theme` using CSS variables.
-- Day repos should set `theme` with a day-seeded deterministic selector.
+使い方
+1. 項目を入れる
+2. 追加や編集をする
+3. 結果を見る
 
-## Component Packs (tiered build)
+## Story
 
-- Template reads `complexity_tier` / `selected_components` from `meta.json`.
-- `selected_components` is missing: runs as small tier baseline with all packs OFF.
-- Unknown component names are ignored safely.
-- Each pack can be toggled independently and app core flow still works.
+- [制作ストーリー](./STORY.md)
+- Complexity hint: Implement the locked brief with one clear hero interaction and keep the main screenshot readable.
+- Publish hook: 洗濯物の量、帰宅時刻、雨の不安、部屋干し余白を入れると、外干しで逃げ切れる窓と切替時刻が一本で見える。
 
-Supported packs:
+## Demo
 
-- `reason_panel`
-- `sample_inputs`
-- `local_storage`
-- `comparison_view`
-- `history_panel`
-- `export_suite`
-- `step_ui`
+🌐 [GitHub Pages](https://ryo909.github.io/ai-dev-day-086/)
 
-### Quality/Fallback integration
+---
 
-- Every pack root includes `data-quality-marker="<pack_name>"` for evaluator detection.
-- Runtime manifest is published to `window.__COMPONENT_PACKS__` and script node `#componentPackManifest`.
-- Static fallback manifest exists at `public/component-pack-manifest.json`.
-- Medium/Large can increase visual depth safely by selecting more packs without changing core logic.
+Day086 / #100日開発
