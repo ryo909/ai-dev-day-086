@@ -1,11 +1,11 @@
 {
   "title": "洗濯逃げ窓コンパス",
   "archetype": "window_adjust",
-  "interaction_model": "structured_multi_field",
-  "primary_layout": "two_column_workbench",
-  "result_presentation_style": "stacked_result_cards",
-  "palette_motif": "neutral slate / white",
-  "main_cta": "サンプルで試す",
-  "intro_variant": "generic",
-  "ui_variant": "generic"
+  "interaction_model": "editable_laundry_rows_to_weather_window",
+  "primary_layout": "laundry_time_window_workbench",
+  "result_presentation_style": "escape_window_bar_and_switch_cards",
+  "palette_motif": "洗濯逃げ窓スカイ",
+  "main_cta": "外干し前で試す",
+  "intro_variant": "laundry_escape_window",
+  "ui_variant": "laundry-window"
 }
