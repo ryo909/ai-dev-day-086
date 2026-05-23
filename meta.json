@@ -66,7 +66,7 @@
   "mechanic": "window_adjust",
   "input_style": "editable_rows",
   "output_style": "time_window_cards",
-  "output_label": "ここを見ればOKです",
+  "output_label": "外干しの逃げ窓です",
   "audience_promise": "出発前に外干し継続か部屋干し切替かを決められる。",
   "publish_hook": "洗濯物の量、帰宅時刻、雨の不安、部屋干し余白を入れると、外干しで逃げ切れる窓と切替時刻が一本で見える。",
   "engine": "brief_driven",
